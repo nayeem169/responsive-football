@@ -1,4 +1,4 @@
-/* google fonts  */
+ /* google fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 /* common style  */
@@ -136,6 +136,33 @@ button .fa-arrow-right {
   color: #6c6c6c;
   font-weight: 400;
 }
+/* live matches */
+.live-matches {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.live-section-title h1 {
+  color: #2d25a0;
+  font-size: 40px;
+}
+.matches-scedule {
+  box-shadow: 5px 5px 40px gainsboro;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  margin-top: 40px;
+}
+.match-details {
+  display: flex;
+}
+.match-img img {
+  border-radius: 10px;
+}
+.match-info {
+  margin: auto 30px;
+}
 /* highlights section  */
 .highlights {
   margin-top: 120px;
@@ -176,6 +203,30 @@ button .fa-arrow-right {
   margin-left: 0;
   margin-top: 10px;
 }
+/* golden player */
+.gold-ball-title h1 {
+  color: #2d25a0;
+  font-size: 40px;
+  text-align: center;
+}
+.golden-players {
+  display: flex;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.player-info {
+  background-color: rgba(211, 211, 211, 0.445);
+  border-radius: 5px;
+  box-shadow: 2px 2px 40px gray;
+  margin: 0 15px 60px 15px;
+  padding: 15px;
+}
+
+.player-img img {
+  border-radius: 5px;
+}
+
 /* footer  */
 .footer-section {
   display: flex;
@@ -200,6 +251,10 @@ button .fa-arrow-right {
 }
 /* responsive design start  */
 @media only screen and (max-width: 667px) {
+  /* common style */
+
+  /* main styles  */
+
   .header-img {
     display: flex;
     justify-content: center;
@@ -237,17 +292,21 @@ button .fa-arrow-right {
   .login-button {
     display: none;
   }
+  .header-title-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   button {
-    margin-left: 180px;
-    padding-left: 30px;
+    margin-left: 30px;
   }
   .header-title-and-img {
     display: flex;
     flex-direction: column;
   }
   .header-title h1 {
-    margin-left: 0;
-    max-width: auto;
+    margin-left: 30px;
     text-align: center;
     padding-top: 30px;
     font-size: 36px;
@@ -259,6 +318,15 @@ button .fa-arrow-right {
   }
   .blog {
     margin-right: 0;
+  }
+  .live-section-title h1 {
+    font-size: 30px;
+  }
+  .matches-scedule {
+    margin-left: 5px;
+  }
+  .match-info {
+    padding-right: 20px;
   }
   .highlights {
     margin-top: 60px;
@@ -282,6 +350,21 @@ button .fa-arrow-right {
     width: 90%;
     margin-top: 30px;
     border-radius: 5px;
+  }
+  .gold-ball-title h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #2d25a0;
+  }
+  .golden-players {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    align-items: center;
+  }
+  .player-info {
+    margin-bottom: 30px;
   }
   .footer-img img {
     width: 350px;
